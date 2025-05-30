@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <title>ItemQuest</title>
+</head>
+
+<body>
+
+    <div class="begin">
+        <h1>Welkom bij het zoekspel ItemQuest</h1>
+        <button id="startBtn">Start</button>
+    </div>
+
+
+
+
+    <div class="storyline hidden">
+
+        <h1>Storyline:</h1>
+        <p>Er raken steeds spullen kwijt! Het is aan jou om ze weer terug te vinden.</p>
+        <p>
+            Er zijn straks een aantal spullen te zien op een tafel, je hebt 10 seconden om goed naar de tafel te
+            kijken en te onthouden wat er allemaal op ligt.
+            Na die 10 seconden is het aan jou om erachter te komen welk voorwerp is verdwenen.</p>
+        <p>Ben je er klaar voor? Druk dan op Start</p>
+        <img src="Image/Detectivemetvergrootglas.png" alt="detectivemetvergrootglas">
+        <button id="beginBtn">Start</button>
+    </div>
+
+
+
+    <div class="tafel hidden">
+        <h1>Dit zijn de spullen die we veilig moeten houden</h1>
+        <img src="Image/tafelmetspullen.png" alt="tafelmetspullen">
+        <h2>Kijk 10 seconden even goed naar de tafel</h2>
+        <p id="timer1"> </p>
+        <img src="Image/Andere pose.png" alt="pose">
+    </div>
+
+    <div class="lichtuit hidden">
+        <h1>Oh nee! iemand heeft het licht uitgezet</h1>
+    </div>
+
+    <div class="zoekobject hidden">
+        <h1>Er is een object verdwenen weet jij wat het is?</h1>
+        <img src="Image/vermistobject-Photoroom.png" alt="vermistobject">
+        <img src="Image/Detective geschrokken.png" alt="geschrokken">
+
+        <input type="text" id="antwoordInput" placeholder="Typ hier je antwoord">
+        <button id="controleerBtn">Controleer</button>
+        <p id="feedback"></p>
+    </div>
+
+    <div class="volgendlevel hidden">
+        <h1>Goed gedaan! Je hebt het voorwerp gevonden.</h1>
+        <p>Klaar voor de volgende ronde?</p>
+        <button id="volgendeRondeBtn">Volgende ronde</button>
+    </div>
+
+    <div class="tafel2 hidden">
+        <h1>Dit zijn de spullen die we veilig moeten houden</h1>
+        <img src="Image/Level2afbeelding1.png" alt="level2spullen">
+        <h2>Kijk 10 seconden even goed naar de foto</h2>
+        <p id="timer2"> </p>
+        <img src="Image/Andere pose.png" alt="pose">
+    </div>
+
+    <div class="lichtuit2 hidden">
+        <h1>Oh nee! iemand heeft het licht uitgezet</h1>
+    </div>
+
+    <div class="zoekobject2 hidden">
+        <h1>Er zijn meerdere objecten verdwenen weet jij wat ze zijn?</h1>
+        <img src="Image/Level2afbeelding2.png" alt="vermisteobjecten">
+        <img src="Image/Detective geschrokken.png" alt="geschrokken">
+        <p id="teller">Gevonden: 0/9</p>
+
+        <input type="text" id="antwoordInput2" placeholder="Typ hier je antwoord">
+        <button id="controleerBtn2">Controleer</button>
+        <p id="feedback2"></p>
+    </div>
+
+    <div class="einde hidden">
+        <h1 id="eindeBericht">Super goed gedaan je hebt alle voorwerpen terug gevonden!</h1>
+        <p>wil je nog een keer spelen? Druk dan op home</p>
+        <button id="home">Home</button>
+    </div>
+
+
+
+</body>
+
+</html>

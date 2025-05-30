@@ -1,0 +1,185 @@
+.hidden {
+    display: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8c97d;
+    font-family: monospace;
+}
+
+div {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border-radius: 0, 5em;
+}
+
+button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #80490e;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    width: 20%;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: #5f3908;
+    padding: 12px 22px;
+    transition: 0, 5s;
+}
+
+.begin {
+    background-image: url('Image/Voorblad.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.begin h1 {
+    padding-top: 300px;
+    color: antiquewhite;
+}
+
+.begin button {
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+.storyline {
+    background-color: #f8c97d;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.storyline img[alt="detectivemetvergrootglas"] {
+    order: 2;
+    max-width: 200px;
+    align-self: flex-end;
+    height: auto;
+    margin: 1em;
+    padding-right: 500px;
+    padding-bottom: 200px;
+}
+
+.storyline p {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.storyline h1 {
+    width: 100%;
+    padding-top: 220px;
+}
+
+.storyline button {
+    width: 20%;
+    margin: 100px;
+    margin-left: 765px;
+    display: block;
+
+}
+
+.tafel, .tafel2 {
+    background-color: #f8c97d;
+}
+
+#timer1, #timer2 {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.lichtuit, .lichtuit2 {
+    background-color: black;
+    color: antiquewhite;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.zoekobject, .zoekobject2 {
+    background-color: #f8c97d;
+    padding: 0%;
+}
+
+.zoekobject h1, .zoekobject2 h1 {
+    margin-top: 100px;
+}
+
+#antwoordInput {
+    padding: 10px;
+    font-size: 1rem;
+    width: 200px;
+    margin: 10px 0;
+}
+
+#controleerBtn {
+    margin-left: 10px;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.volgendlevel, .einde {
+    background-color: #f8c97d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.tafel img[alt="tafelmetspullen"],
+.zoekobject img[alt="vermistobject"] {
+    width: 35%;
+    display: block;
+    margin: auto;
+
+}
+
+.tafel img[alt="pose"], .tafel2 img[alt="pose"],
+.storyline img[alt="detectivemetvergrootglas"],
+.zoekobject img[alt="geschrokken"], .zoekobject2 img[alt="geschrokken"]  {
+    width: 8rem;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+
+.tafel2 img[alt="level2spullen"], .zoekobject2 img[alt="vermisteobjecten"] {
+    display: block;
+    margin: auto;
+    width: 22%;
+}
